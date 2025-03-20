@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistRecommenderAPI", "PlaylistRecommenderAPI.csproj", "{471CCEF8-DCF7-8189-0EA4-1B49070FDC10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistRecommenderAPI.Testes", "..\PlaylistRecommenderAPI.Testes\PlaylistRecommenderAPI.Testes.csproj", "{8407CF52-0CC4-418F-AA3F-454E0720A56F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{471CCEF8-DCF7-8189-0EA4-1B49070FDC10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471CCEF8-DCF7-8189-0EA4-1B49070FDC10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471CCEF8-DCF7-8189-0EA4-1B49070FDC10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471CCEF8-DCF7-8189-0EA4-1B49070FDC10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8407CF52-0CC4-418F-AA3F-454E0720A56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8407CF52-0CC4-418F-AA3F-454E0720A56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8407CF52-0CC4-418F-AA3F-454E0720A56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8407CF52-0CC4-418F-AA3F-454E0720A56F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C880AD1C-504B-4C8C-8619-86CF98569EC1}
+	EndGlobalSection
+EndGlobal

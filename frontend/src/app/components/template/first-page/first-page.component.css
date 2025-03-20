@@ -1,0 +1,51 @@
+.first-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #242222;
+    color: #edf0f2;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+img {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+header {
+    font-size: 25px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+h1 {
+    padding-left: 50px;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.btn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 15px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #edf0f2;
+    background: transparent;
+    border: 2px solid #edf0f2;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #edf0f2;
+    color: #242222;
+}

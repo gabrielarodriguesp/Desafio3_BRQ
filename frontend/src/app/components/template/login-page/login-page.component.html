@@ -1,0 +1,26 @@
+<div class="modal-overlay">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <input type="email" formControlName="email" placeholder="E-mail" />
+      <span *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+        Digite um e-mail válido.
+      </span>
+
+      <input type="password" formControlName="password" placeholder="Senha" />
+      <span *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+        A senha deve ter no mínimo 6 caracteres.
+      </span>
+
+      <button type="submit" [disabled]="loginForm.invalid">Entrar</button>
+      <button routerLink="/second-page" type="button" class="close-btn">Cancelar</button>
+
+      <div class="social-login">
+        <p>OU</p>
+        <button class="google-btn">Entrar com Google</button>
+        <button class="facebook-btn">Entrar com Facebook</button>
+        <button class="apple-btn">Entrar com Apple ID</button>
+      </div>
+    </form>
+  </div>
+</div>

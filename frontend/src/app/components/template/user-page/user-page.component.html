@@ -1,0 +1,37 @@
+<div class="user-container">
+  <div class="header">
+      <div class="icon-left">
+          <a routerLink="/history-page">
+              <img src="history.png" alt="Histórico">
+          </a>
+      </div>
+      <h1>Bem vindo, Usuário</h1>
+      <div class="icon-right">
+          <a routerLink="/first-page">
+              <img src="logout.png" alt="Sair">
+          </a>
+      </div>
+  </div>
+
+  <p class="subtitle">Insira suas músicas favoritas do momento</p>
+
+  <div class="card-container">
+      <div class="music-card" *ngFor="let song of selectedSongs; let i = index">
+          <div class="card-content" (click)="openModal(i)">
+              <img *ngIf="song.albumCover" [src]="song.albumCover" alt="Capa da Música">
+              <h3 *ngIf="song.name">{{ song.name }}</h3>
+              <p *ngIf="song.artist">{{ song.artist }}</p>
+              <p *ngIf="!song.albumCover">Adicionar...</p>
+          </div>
+          <button class="remove-button" *ngIf="song.name" (click)="removeSong(i, $event)">X</button>
+      </div>
+  </div>
+
+  <button (click)="searchPlaylist()" class="search-button">Pesquisar Playlist</button>
+
+  <app-music-search-modal
+    *ngIf="showModal"
+    (closeModal)="closeModal()"
+    (songSelected)="getSongInfo($event)">
+  </app-music-search-modal>
+</div>

@@ -1,0 +1,10 @@
+<div class="modal-overlay">
+  <div class="modal">
+    <h2>Digite o nome da música</h2>
+    <input type="text" [(ngModel)]="songName" placeholder="Nome da música" />
+    <div class="modal-actions">
+      <button (click)="searchSong()">Confirmar</button>
+      <button (click)="closeModal.emit()">Cancelar</button>
+    </div>
+  </div>
+</div>

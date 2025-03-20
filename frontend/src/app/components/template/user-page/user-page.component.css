@@ -1,0 +1,116 @@
+.user-container {
+  text-align: center;
+  background-color: #242222;
+  color: #edf0f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+p {
+  padding: 40px;
+  color: #242222;
+  font-size: 20px;
+}
+
+h3 {
+  color: #242222;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.icon-left img, .icon-right img {
+  width: 30px;
+  cursor: pointer;
+}
+.subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #edf0f2;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.music-card {
+  width: 250px;
+  height: 300px;
+  background-color: #edf0f2;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-card:hover {
+  transform: scale(1.02);
+}
+
+.music-card img {
+  position: relative;
+  text-align: center;
+  width: 60%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.song-title {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.artist-name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #242222;
+}
+
+.search-button {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border: 1px solid #edf0f2;
+  background: none;
+  color: #edf0f2;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+}
+
+.search-button:hover {
+  background: #edf0f2;
+  color: #242222;
+}
+
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #242222;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background: #242222;
+  color: #edf0f2;
+}

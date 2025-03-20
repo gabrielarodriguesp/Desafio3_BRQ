@@ -1,0 +1,22 @@
+<div class="history-container">
+  <header>
+    <h2>Histórico</h2>
+    <div class="icon-back">
+      <a routerLink="/user-page">
+        <img src="back.png" alt="Voltar">
+      </a>
+    </div>
+  </header>
+
+  <p>Aqui estão as Playlists que já foram recomendadas para você.<br>E aí, curtiu alguma?</p>
+
+  <div class="playlist-grid">
+    <div *ngFor="let playlist of playlists" class="playlist-card">
+      <div class="playlist-image">
+        <img [src]="playlist.imageUrl" alt="Capa da Playlist">
+      </div>
+      <h3>{{ playlist.name }}</h3>
+      <button (click)="openPlaylist(playlist.link)">Ir para playlist</button>
+    </div>
+  </div>
+</div>

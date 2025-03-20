@@ -1,0 +1,106 @@
+.history-container {
+  color: #edf0f2;
+  height: 100vh;
+  justify-content: center;
+  background-image: url("../../../../assets/dj.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.icon-back {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.icon-back img {
+  width: 40px;
+  cursor: pointer;
+}
+
+h2 {
+  padding: 30px 50px;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h3 {
+  color: #242222;
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.playlist-grid {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.playlist-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #edf0f2;
+  padding: 1rem;
+  border-radius: 12px;
+  height: 320px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playlist-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.playlist-image img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  width: 90%;
+  margin-top: auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #242222;
+  color: #edf0f2;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #242222;
+}

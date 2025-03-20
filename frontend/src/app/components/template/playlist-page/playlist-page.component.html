@@ -1,0 +1,23 @@
+<div class="playlist-container">
+  <div class="playlist-content">
+    <div class="playlist-cover">
+      <img *ngIf="playlistImage" [src]="playlistImage" alt="Playlist Cover">
+      <div class="playlist-name" *ngIf="playlistName">{{ playlistName }}</div>
+    </div>
+
+    <div class="playlist-info">
+      <h2>Encontramos uma Playlist para você!</h2>
+      <p *ngIf="playlistName">
+        A Playlist <b>{{ playlistName }}</b> possui tudo que você precisa ouvir!
+        Nela, estão as <b>melhores músicas do gênero</b> que te agrada.
+      </p>
+
+      <a *ngIf="playlistUrl" [href]="playlistUrl" target="_blank">
+        <button class="play-playlist">Ouvir Playlist</button>
+      </a>
+      <a routerLink="/user-page">
+        <button class="new-search">Realizar nova pesquisa</button>
+      </a>
+    </div>
+  </div>
+</div>

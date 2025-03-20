@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "e9Q4BT1OU2lrFlZRzMaARlOtIRuYKKh+3ervXryY9ss=",
+  "Source": "PlaylistRecommenderAPI",
+  "BasePath": "_content/PlaylistRecommenderAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
